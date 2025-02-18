@@ -1,0 +1,20 @@
+{"time":"2025-02-17T23:38:33.3419598+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\mnist\\wandb\\run-20250217_233833-xx28bons\\logs\\debug-core.log"}
+{"time":"2025-02-17T23:38:33.4613272+09:00","level":"INFO","msg":"created new stream","id":"xx28bons"}
+{"time":"2025-02-17T23:38:33.4613272+09:00","level":"INFO","msg":"stream: started","id":"xx28bons"}
+{"time":"2025-02-17T23:38:33.4613272+09:00","level":"INFO","msg":"sender: started","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:38:33.4613272+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:38:33.4613272+09:00","level":"INFO","msg":"handler: started","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:38:33.7883588+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T23:38:43.7888171+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:38:53.7890969+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:39:03.7897842+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:39:13.7894884+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:39:16.1128302+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-17T23:39:16.1128302+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-17T23:39:17.1214247+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xx28bons-predictions","runtime_seconds":1.421146}],"total_operations":1}}
+{"time":"2025-02-17T23:39:17.720189+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-17T23:39:18.9821962+09:00","level":"INFO","msg":"stream: closing","id":"xx28bons"}
+{"time":"2025-02-17T23:39:18.9821962+09:00","level":"INFO","msg":"handler: closed","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:39:18.9821962+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:39:18.9821962+09:00","level":"INFO","msg":"sender: closed","stream_id":"xx28bons"}
+{"time":"2025-02-17T23:39:18.9827001+09:00","level":"INFO","msg":"stream: closed","id":"xx28bons"}

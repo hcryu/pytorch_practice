@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\GD_Sync\1_PROJECT\2_CODES\pytorch-practice\classification\mnist\train.py", line 122, in <module>
+    train(device=args.device)
+  File "C:\GD_Sync\1_PROJECT\2_CODES\pytorch-practice\classification\mnist\train.py", line 97, in train
+    optimizer = optim.SGD(model.parameters(), lr=lr, moemntum=0.9)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SGD.__init__() got an unexpected keyword argument 'moemntum'

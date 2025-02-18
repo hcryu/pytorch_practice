@@ -1,0 +1,21 @@
+{"time":"2025-02-17T23:46:40.8152885+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\mnist\\wandb\\run-20250217_234640-19p9ji3v\\logs\\debug-core.log"}
+{"time":"2025-02-17T23:46:40.9335171+09:00","level":"INFO","msg":"created new stream","id":"19p9ji3v"}
+{"time":"2025-02-17T23:46:40.9335171+09:00","level":"INFO","msg":"stream: started","id":"19p9ji3v"}
+{"time":"2025-02-17T23:46:40.9335171+09:00","level":"INFO","msg":"handler: started","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:46:40.9340848+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:46:40.9340848+09:00","level":"INFO","msg":"sender: started","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:46:41.261513+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T23:46:51.2631305+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:47:01.2626814+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:47:11.2625963+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:47:21.2631282+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:47:31.2633018+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-17T23:47:32.3267999+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-17T23:47:32.3267999+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-17T23:47:33.332211+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-19p9ji3v-predictions","runtime_seconds":1.4512904,"subtasks":[{"desc":"predictions.table.json","runtime_seconds":0.5881678,"progress":"138.8KB/138.8KB"},{"desc":"media/images/42c664d4cc327d835f03.png","runtime_seconds":0.5867535,"progress":"307B/307B"},{"desc":"media/images/107c73259951b8f197cd.png","runtime_seconds":0.5862504,"progress":"171B/171B"},{"desc":"media/images/7e880cd01cb62efbcc27.png","runtime_seconds":0.5862504,"progress":"290B/290B"},{"desc":"media/images/9a6eb8f9453202d7ad40.png","runtime_seconds":0.5852058,"progress":"289B/289B"},{"desc":"media/images/b987f91e6f29d896a38f.png","runtime_seconds":0.5852058,"progress":"286B/286B"},{"desc":"media/images/a3c47bfce2eaf5555475.png","runtime_seconds":0.5852058,"progress":"193B/193B"},{"desc":"media/images/695109afdaeac177b767.png","runtime_seconds":0.5852058,"progress":"237B/237B"},{"desc":"media/images/6d85e3d8263d75b2a9d8.png","runtime_seconds":0.5845677,"progress":"235B/235B"},{"desc":"media/images/e751a36fd1d7484e316a.png","runtime_seconds":0.5845677,"progress":"275B/275B"}]}],"total_operations":1}}
+{"time":"2025-02-17T23:47:34.7736129+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-17T23:47:36.0223225+09:00","level":"INFO","msg":"stream: closing","id":"19p9ji3v"}
+{"time":"2025-02-17T23:47:36.0223225+09:00","level":"INFO","msg":"handler: closed","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:47:36.0223225+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:47:36.0223225+09:00","level":"INFO","msg":"sender: closed","stream_id":"19p9ji3v"}
+{"time":"2025-02-17T23:47:36.0223225+09:00","level":"INFO","msg":"stream: closed","id":"19p9ji3v"}

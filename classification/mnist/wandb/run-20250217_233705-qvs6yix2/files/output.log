@@ -1,0 +1,28 @@
+Epoch 1
+------------------------------------
+loss: 2.308219 [    0/60000]
+loss: 2.278384 [ 3200/60000]
+loss: 2.208448 [ 6400/60000]
+loss: 2.136659 [ 9600/60000]
+loss: 1.842758 [12800/60000]
+loss: 1.664977 [16000/60000]
+loss: 1.164399 [19200/60000]
+loss: 0.961420 [22400/60000]
+loss: 0.936679 [25600/60000]
+loss: 0.859919 [28800/60000]
+loss: 0.857794 [32000/60000]
+loss: 0.875341 [35200/60000]
+loss: 0.381848 [38400/60000]
+loss: 0.379400 [41600/60000]
+loss: 0.485048 [44800/60000]
+loss: 0.345731 [48000/60000]
+loss: 0.286282 [51200/60000]
+loss: 0.254488 [54400/60000]
+loss: 0.634637 [57600/60000]
+Traceback (most recent call last):
+  File "C:\GD_Sync\1_PROJECT\2_CODES\pytorch-practice\classification\mnist\train.py", line 122, in <module>
+    train(device=args.device)
+  File "C:\GD_Sync\1_PROJECT\2_CODES\pytorch-practice\classification\mnist\train.py", line 104, in train
+    test_one_epoch(test_loader, device, model, loss_fn, t+1, test_table)
+    ^^^^^^^^^^^^^^
+NameError: name 'test_one_epoch' is not defined

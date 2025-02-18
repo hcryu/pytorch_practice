@@ -1,0 +1,15 @@
+{"time":"2025-02-17T23:37:05.981223+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\mnist\\wandb\\run-20250217_233705-qvs6yix2\\logs\\debug-core.log"}
+{"time":"2025-02-17T23:37:06.1004924+09:00","level":"INFO","msg":"created new stream","id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:06.1004924+09:00","level":"INFO","msg":"stream: started","id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:06.1004924+09:00","level":"INFO","msg":"handler: started","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:06.1004924+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:06.1004924+09:00","level":"INFO","msg":"sender: started","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:06.4550048+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T23:37:11.4828799+09:00","level":"INFO","msg":"stream: closing","id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:11.4828799+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-17T23:37:11.4828799+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-17T23:37:12.2668279+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-17T23:37:12.5347745+09:00","level":"INFO","msg":"handler: closed","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:12.5347745+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:12.5347745+09:00","level":"INFO","msg":"sender: closed","stream_id":"qvs6yix2"}
+{"time":"2025-02-17T23:37:12.5352775+09:00","level":"INFO","msg":"stream: closed","id":"qvs6yix2"}
