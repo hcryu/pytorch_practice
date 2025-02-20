@@ -1,0 +1,49 @@
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4070') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\pytorch_lightning\loggers\wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type             | Params | Mode
+-----------------------------------------------------
+0 | model   | NeuralNetwork    | 669 K  | train
+1 | loss_fn | CrossEntropyLoss | 0      | train
+-----------------------------------------------------
+669 K     Trainable params
+0         Non-trainable params
+669 K     Total params
+2.679     Total estimated model params size (MB)
+9         Modules in train mode
+0         Modules in eval mode
+Sanity Checking DataLoader 0:   0%|                                                                                                          | 0/2 [00:00<?, ?it/s][Validation] Step: 0, val_loss: 2.29888916015625
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+Sanity Checking DataLoader 0: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 20.41it/s]on_validation_epoch_end() has been called!!
+callback_metrics: {'val_loss': tensor(2.2929, device='cuda:0'), 'val_loss_epoch': tensor(2.2929, device='cuda:0')}
+Epoch 0 - avg_val_loss: 2.292938232421875
+Epoch 0: 100%|█████████████████████████████████████████████████████████████████████████████| 1875/1875 [00:07<00:00, 239.51it/s, v_num=a934, train_loss_step=0.445][Validation] Step: 0, val_loss: 0.3896233141422272
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+Validation DataLoader 0:   0%|                                                                                                             | 0/312 [00:00<?, ?it/s][Validation] Step: 100, val_loss: 0.38957345485687256
+Validation DataLoader 0:  32%|███████████████████████████████▍                                                                  | 100/312 [00:00<00:00, 328.39it/s][Validation] Step: 200, val_loss: 0.45371344685554504
+Validation DataLoader 0:  64%|██████████████████████████████████████████████████████████████▊                                   | 200/312 [00:00<00:00, 333.60it/s][Validation] Step: 300, val_loss: 0.28036823868751526
+Validation DataLoader 0:  96%|██████████████████████████████████████████████████████████████████████████████████████████████▏   | 300/312 [00:00<00:00, 338.00it/s]on_validation_epoch_end() has been called!!
+callback_metrics: {'train_loss': tensor(0.4452, device='cuda:0'), 'train_loss_step': tensor(0.4452, device='cuda:0'), 'val_loss': tensor(0.4122, device='cuda:0'), 'val_loss_epoch': tensor(0.4122, device='cuda:0')}
+Epoch 0 - avg_val_loss: 0.41224151849746704
+Epoch 1: 100%|█| 1875/1875 [00:08<00:00, 220.02it/s, v_num=a934, train_loss_step=0.312, val_loss_step=0.609, val_loss_epoch=0.412, avg_val_loss=0.412, train_loss_e[Validation] Step: 0, val_loss: 0.35060304403305054
+Validation DataLoader 0:   0%|                                                                                                             | 0/312 [00:00<?, ?it/s][Validation] Step: 100, val_loss: 0.5065528154373169
+Validation DataLoader 0:  32%|███████████████████████████████▍                                                                  | 100/312 [00:00<00:00, 324.06it/s][Validation] Step: 200, val_loss: 0.4774746596813202
+Validation DataLoader 0:  64%|██████████████████████████████████████████████████████████████▊                                   | 200/312 [00:00<00:00, 294.86it/s][Validation] Step: 300, val_loss: 0.27763232588768005
+Validation DataLoader 0:  96%|██████████████████████████████████████████████████████████████████████████████████████████████▏   | 300/312 [00:01<00:00, 293.49it/s]on_validation_epoch_end() has been called!!
+callback_metrics: {'train_loss': tensor(0.3120, device='cuda:0'), 'train_loss_step': tensor(0.3120, device='cuda:0'), 'val_loss': tensor(0.3787, device='cuda:0'), 'val_loss_epoch': tensor(0.3787, device='cuda:0'), 'avg_val_loss': tensor(0.4122, device='cuda:0'), 'train_loss_epoch': tensor(0.4826, device='cuda:0')}
+Epoch 1 - avg_val_loss: 0.37872669100761414
+Epoch 2: 100%|█| 1875/1875 [00:08<00:00, 210.31it/s, v_num=a934, train_loss_step=0.277, val_loss_step=0.618, val_loss_epoch=0.379, avg_val_loss=0.379, train_loss_e[Validation] Step: 0, val_loss: 0.2554452419281006
+Validation DataLoader 0:   0%|                                                                                                             | 0/312 [00:00<?, ?it/s][Validation] Step: 100, val_loss: 0.4557397961616516
+Validation DataLoader 0:  32%|███████████████████████████████▍                                                                  | 100/312 [00:00<00:00, 291.98it/s][Validation] Step: 200, val_loss: 0.27909648418426514
+Validation DataLoader 0:  64%|██████████████████████████████████████████████████████████████▊                                   | 200/312 [00:00<00:00, 297.68it/s][Validation] Step: 300, val_loss: 0.23277053236961365
+Validation DataLoader 0:  96%|██████████████████████████████████████████████████████████████████████████████████████████████▏   | 300/312 [00:00<00:00, 301.98it/s]on_validation_epoch_end() has been called!!
+callback_metrics: {'train_loss': tensor(0.2767, device='cuda:0'), 'train_loss_step': tensor(0.2767, device='cuda:0'), 'val_loss': tensor(0.3719, device='cuda:0'), 'val_loss_epoch': tensor(0.3719, device='cuda:0'), 'avg_val_loss': tensor(0.3787, device='cuda:0'), 'train_loss_epoch': tensor(0.3603, device='cuda:0')}
+Epoch 2 - avg_val_loss: 0.3719208240509033
+Epoch 2: 100%|█| 1875/1875 [00:09<00:00, 187.85it/s, v_num=a934, train_loss_step=0.277, val_loss_step=0.448, val_loss_epoch=0.372, avg_val_loss=0.372, train_loss_e
+
+`Trainer.fit` stopped: `max_epochs=3` reached.

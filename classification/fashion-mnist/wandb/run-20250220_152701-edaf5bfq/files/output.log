@@ -1,0 +1,128 @@
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4070') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\pytorch_lightning\loggers\wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type             | Params | Mode
+-----------------------------------------------------
+0 | model   | NeuralNetwork    | 669 K  | train
+1 | loss_fn | CrossEntropyLoss | 0      | train
+-----------------------------------------------------
+669 K     Trainable params
+0         Non-trainable params
+669 K     Total params
+2.679     Total estimated model params size (MB)
+9         Modules in train mode
+0         Modules in eval mode
+Sanity Checking DataLoader 0:   0%|                                                                                                        | 0/2 [00:00<?, ?it/s]
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+[Validation] Step: 0, val_loss: 2.29888916015625
+Sanity Checking DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 22.54it/s]callback_metrics: {'val_loss': tensor(2.2929, device='cuda:0'), 'val_loss_epoch': tensor(2.2929, device='cuda:0')}
+Epoch 1 - avg_val_loss: 2.292938232421875
+Epoch 0: 100%|███████████████████████████████████████████████████████████████████████████| 1875/1875 [00:07<00:00, 238.75it/s, v_num=5bfq, train_loss_step=0.445]
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+[Validation] Step: 0, val_loss: 0.3896233141422272                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.38957345485687256███████▊                                                                 | 100/312 [00:00<00:00, 320.78it/s]
+
+[Validation] Step: 200, val_loss: 0.45371344685554504██████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 332.37it/s]
+
+[Validation] Step: 300, val_loss: 0.28036823868751526█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 337.61it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.4452, device='cuda:0'), 'train_loss_step': tensor(0.4452, device='cuda:0'), 'val_loss': tensor(0.4122, device='cuda:0'), 'val_loss_epoch': tensor(0.4122, device='cuda:0')}
+Epoch 1 - avg_val_loss: 0.41224151849746704███████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 336.86it/s]
+Epoch 1: 100%|█| 1875/1875 [00:08<00:00, 223.39it/s, v_num=5bfq, train_loss_step=0.312, val_loss_step=0.609, val_loss_epoch=0.412, avg_val_loss=0.412, train_loss
+[Validation] Step: 0, val_loss: 0.35060304403305054                                                                                      | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.5065528154373169████████▊                                                                 | 100/312 [00:00<00:00, 342.44it/s]
+
+[Validation] Step: 200, val_loss: 0.4774746596813202███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 337.79it/s]
+
+[Validation] Step: 300, val_loss: 0.27763232588768005█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 336.90it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.3120, device='cuda:0'), 'train_loss_step': tensor(0.3120, device='cuda:0'), 'val_loss': tensor(0.3787, device='cuda:0'), 'val_loss_epoch': tensor(0.3787, device='cuda:0'), 'avg_val_loss': tensor(0.4122, device='cuda:0'), 'train_loss_epoch': tensor(0.4826, device='cuda:0')}
+Epoch 2 - avg_val_loss: 0.37872669100761414███████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 337.48it/s]
+Epoch 2: 100%|█| 1875/1875 [00:08<00:00, 224.27it/s, v_num=5bfq, train_loss_step=0.277, val_loss_step=0.618, val_loss_epoch=0.379, avg_val_loss=0.379, train_loss
+[Validation] Step: 0, val_loss: 0.2554452419281006                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.4557397961616516████████▊                                                                 | 100/312 [00:00<00:00, 337.38it/s]
+
+[Validation] Step: 200, val_loss: 0.27909648418426514██████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 340.44it/s]
+
+[Validation] Step: 300, val_loss: 0.23277053236961365█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 338.77it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.2767, device='cuda:0'), 'train_loss_step': tensor(0.2767, device='cuda:0'), 'val_loss': tensor(0.3719, device='cuda:0'), 'val_loss_epoch': tensor(0.3719, device='cuda:0'), 'avg_val_loss': tensor(0.3787, device='cuda:0'), 'train_loss_epoch': tensor(0.3603, device='cuda:0')}
+Epoch 3 - avg_val_loss: 0.3719208240509033████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 337.28it/s]
+Epoch 3: 100%|█| 1875/1875 [00:08<00:00, 225.47it/s, v_num=5bfq, train_loss_step=0.535, val_loss_step=0.448, val_loss_epoch=0.372, avg_val_loss=0.372, train_loss
+[Validation] Step: 0, val_loss: 0.3313857316970825                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.35257235169410706███████▊                                                                 | 100/312 [00:00<00:00, 330.68it/s]
+
+[Validation] Step: 200, val_loss: 0.40240487456321716██████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 327.45it/s]
+
+[Validation] Step: 300, val_loss: 0.34607306122779846█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 323.43it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.5347, device='cuda:0'), 'train_loss_step': tensor(0.5347, device='cuda:0'), 'val_loss': tensor(0.3622, device='cuda:0'), 'val_loss_epoch': tensor(0.3622, device='cuda:0'), 'avg_val_loss': tensor(0.3719, device='cuda:0'), 'train_loss_epoch': tensor(0.3241, device='cuda:0')}
+Epoch 4 - avg_val_loss: 0.36215299367904663███████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 322.29it/s]
+Epoch 4: 100%|█| 1875/1875 [00:08<00:00, 216.62it/s, v_num=5bfq, train_loss_step=0.332, val_loss_step=0.435, val_loss_epoch=0.362, avg_val_loss=0.362, train_loss
+[Validation] Step: 0, val_loss: 0.3134377896785736                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.4411628842353821████████▊                                                                 | 100/312 [00:00<00:00, 334.01it/s]
+
+[Validation] Step: 200, val_loss: 0.3717624843120575███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 329.69it/s]
+
+[Validation] Step: 300, val_loss: 0.21282075345516205█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 326.69it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.3323, device='cuda:0'), 'train_loss_step': tensor(0.3323, device='cuda:0'), 'val_loss': tensor(0.3616, device='cuda:0'), 'val_loss_epoch': tensor(0.3616, device='cuda:0'), 'avg_val_loss': tensor(0.3622, device='cuda:0'), 'train_loss_epoch': tensor(0.2999, device='cuda:0')}
+Epoch 5 - avg_val_loss: 0.3615528345108032████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 324.36it/s]
+Epoch 5: 100%|█| 1875/1875 [00:08<00:00, 211.45it/s, v_num=5bfq, train_loss_step=0.347, val_loss_step=0.464, val_loss_epoch=0.362, avg_val_loss=0.362, train_loss
+[Validation] Step: 0, val_loss: 0.3178669214248657                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.33037883043289185███████▊                                                                 | 100/312 [00:00<00:00, 330.27it/s]
+
+[Validation] Step: 200, val_loss: 0.3643709421157837███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 333.30it/s]
+
+[Validation] Step: 300, val_loss: 0.15997394919395447█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 333.46it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.3468, device='cuda:0'), 'train_loss_step': tensor(0.3468, device='cuda:0'), 'val_loss': tensor(0.3561, device='cuda:0'), 'val_loss_epoch': tensor(0.3561, device='cuda:0'), 'avg_val_loss': tensor(0.3616, device='cuda:0'), 'train_loss_epoch': tensor(0.2812, device='cuda:0')}
+Epoch 6 - avg_val_loss: 0.3561221659183502████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 333.78it/s]
+Epoch 6: 100%|█| 1875/1875 [00:09<00:00, 208.13it/s, v_num=5bfq, train_loss_step=0.262, val_loss_step=0.431, val_loss_epoch=0.356, avg_val_loss=0.356, train_loss
+[Validation] Step: 0, val_loss: 0.32147863507270813                                                                                      | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.30424177646636963███████▊                                                                 | 100/312 [00:00<00:00, 296.15it/s]
+
+[Validation] Step: 200, val_loss: 0.2985485792160034███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 284.57it/s]
+
+[Validation] Step: 300, val_loss: 0.18889082968235016█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:01<00:00, 286.87it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.2620, device='cuda:0'), 'train_loss_step': tensor(0.2620, device='cuda:0'), 'val_loss': tensor(0.3307, device='cuda:0'), 'val_loss_epoch': tensor(0.3307, device='cuda:0'), 'avg_val_loss': tensor(0.3561, device='cuda:0'), 'train_loss_epoch': tensor(0.2690, device='cuda:0')}
+Epoch 7 - avg_val_loss: 0.3307252526283264████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:01<00:00, 287.13it/s]
+Epoch 7: 100%|█| 1875/1875 [00:09<00:00, 202.82it/s, v_num=5bfq, train_loss_step=0.433, val_loss_step=0.452, val_loss_epoch=0.331, avg_val_loss=0.331, train_loss
+[Validation] Step: 0, val_loss: 0.24470505118370056                                                                                      | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.39344894886016846███████▊                                                                 | 100/312 [00:00<00:00, 294.37it/s]
+
+[Validation] Step: 200, val_loss: 0.29653844237327576██████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 303.71it/s]
+
+[Validation] Step: 300, val_loss: 0.27770841121673584█████████████████████████████████████████████████████████████████████▎   | 300/312 [00:01<00:00, 288.78it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.4327, device='cuda:0'), 'train_loss_step': tensor(0.4327, device='cuda:0'), 'val_loss': tensor(0.3249, device='cuda:0'), 'val_loss_epoch': tensor(0.3249, device='cuda:0'), 'avg_val_loss': tensor(0.3307, device='cuda:0'), 'train_loss_epoch': tensor(0.2587, device='cuda:0')}
+Epoch 8 - avg_val_loss: 0.32486703991889954███████████████████████████████████████████████████████████████████████████████████| 312/312 [00:01<00:00, 290.56it/s]
+Epoch 8: 100%|█| 1875/1875 [00:09<00:00, 198.23it/s, v_num=5bfq, train_loss_step=0.181, val_loss_step=0.497, val_loss_epoch=0.325, avg_val_loss=0.325, train_loss
+[Validation] Step: 0, val_loss: 0.2897050678730011                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.28111886978149414███████▊                                                                 | 100/312 [00:00<00:00, 308.31it/s]
+
+[Validation] Step: 200, val_loss: 0.2699379026889801███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 312.67it/s]
+
+[Validation] Step: 300, val_loss: 0.2586670517921448██████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 317.23it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.1810, device='cuda:0'), 'train_loss_step': tensor(0.1810, device='cuda:0'), 'val_loss': tensor(0.3166, device='cuda:0'), 'val_loss_epoch': tensor(0.3166, device='cuda:0'), 'avg_val_loss': tensor(0.3249, device='cuda:0'), 'train_loss_epoch': tensor(0.2465, device='cuda:0')}
+Epoch 9 - avg_val_loss: 0.3166421353816986████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 317.86it/s]
+Epoch 9: 100%|█| 1875/1875 [00:09<00:00, 195.31it/s, v_num=5bfq, train_loss_step=0.191, val_loss_step=0.320, val_loss_epoch=0.317, avg_val_loss=0.317, train_loss
+[Validation] Step: 0, val_loss: 0.3184237778186798                                                                                       | 0/312 [00:00<?, ?it/s]
+
+[Validation] Step: 100, val_loss: 0.5030380487442017████████▊                                                                 | 100/312 [00:00<00:00, 315.84it/s]
+
+[Validation] Step: 200, val_loss: 0.2928885221481323███████████████████████████████████████▌                                  | 200/312 [00:00<00:00, 320.40it/s]
+
+[Validation] Step: 300, val_loss: 0.1563606858253479██████████████████████████████████████████████████████████████████████▎   | 300/312 [00:00<00:00, 321.49it/s]
+                                                                                                                                                                 callback_metrics: {'train_loss': tensor(0.1907, device='cuda:0'), 'train_loss_step': tensor(0.1907, device='cuda:0'), 'val_loss': tensor(0.3372, device='cuda:0'), 'val_loss_epoch': tensor(0.3372, device='cuda:0'), 'avg_val_loss': tensor(0.3166, device='cuda:0'), 'train_loss_epoch': tensor(0.2369, device='cuda:0')}
+Epoch 10 - avg_val_loss: 0.337241530418396████████████████████████████████████████████████████████████████████████████████████| 312/312 [00:00<00:00, 321.90it/s]
+Epoch 9: 100%|█| 1875/1875 [00:10<00:00, 176.84it/s, v_num=5bfq, train_loss_step=0.191, val_loss_step=0.352, val_loss_epoch=0.337, avg_val_loss=0.337, train_loss
+
+`Trainer.fit` stopped: `max_epochs=10` reached.

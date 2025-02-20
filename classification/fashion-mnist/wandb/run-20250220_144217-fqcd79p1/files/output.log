@@ -1,0 +1,24 @@
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4070') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\pytorch_lightning\loggers\wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type             | Params | Mode
+-----------------------------------------------------
+0 | model   | NeuralNetwork    | 669 K  | train
+1 | loss_fn | CrossEntropyLoss | 0      | train
+-----------------------------------------------------
+669 K     Trainable params
+0         Non-trainable params
+669 K     Total params
+2.679     Total estimated model params size (MB)
+9         Modules in train mode
+0         Modules in eval mode
+Epoch 9: 100%|█| 1875/1875 [00:09<00:00, 192.55it/s, v_num=79p1, train_loss_step=0.191, val_loss_step=0.352, val_loss_epoch=0.337, train
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+                                                                                                                                        
+`Trainer.fit` stopped: `max_epochs=10` reached.

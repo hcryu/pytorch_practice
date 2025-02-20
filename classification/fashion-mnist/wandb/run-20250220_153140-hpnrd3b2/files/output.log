@@ -1,0 +1,98 @@
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4070') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\pytorch_lightning\loggers\wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type             | Params | Mode
+-----------------------------------------------------
+0 | model   | NeuralNetwork    | 669 K  | train
+1 | loss_fn | CrossEntropyLoss | 0      | train
+-----------------------------------------------------
+669 K     Trainable params
+0         Non-trainable params
+669 K     Total params
+2.679     Total estimated model params size (MB)
+9         Modules in train mode
+0         Modules in eval mode
+Sanity Checking DataLoader 0:   0%|                                             | 0/2 [00:00<?, ?it/s]
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+Sanity Checking DataLoader 0: 100%|█████████████████████████████████████| 2/2 [00:00<00:00, 20.82it/s]
+callback_metrics: {'val_loss': tensor(2.2929, device='cuda:0'), 'val_loss_epoch': tensor(2.2929, device='cuda:0')}
+Epoch 1 - avg_val_loss: 2.292938232421875
+Epoch 0: 100%|████████████████| 1875/1875 [00:08<00:00, 230.13it/s, v_num=d3b2, train_loss_step=0.445]
+C:\Users\syu\miniconda3\envs\torch_lightning\Lib\site-packages\lightning\pytorch\trainer\connectors\data_connector.py:424: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=27` in the `DataLoader` to improve performance.
+[Validation] Step: 0, val_loss: 0.3896233141422272                            | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.38957345485687256              | 100/312 [00:00<00:00, 343.83it/s]
+[Validation] Step: 200, val_loss: 0.45371344685554504▋             | 200/312 [00:00<00:00, 352.65it/s]
+[Validation] Step: 300, val_loss: 0.28036823868751526████████████▌ | 300/312 [00:00<00:00, 353.81it/s]
+callback_metrics: {'train_loss': tensor(0.4452, device='cuda:0'), 'train_loss_step': tensor(0.4452, device='cuda:0'), 'val_loss': tensor(0.4122, device='cuda:0'), 'val_loss_epoch': tensor(0.4122, device='cuda:0')}
+Epoch 1 - avg_val_loss: 0.41224151849746704
+Epoch 1: 100%|█| 1875/1875 [00:08<00:00, 224.70it/s, v_num=d3b2, train_loss_step=0.312, val_loss_step=
+[Validation] Step: 0, val_loss: 0.35060304403305054                           | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.5065528154373169               | 100/312 [00:00<00:00, 355.10it/s]
+[Validation] Step: 200, val_loss: 0.4774746596813202█▋             | 200/312 [00:00<00:00, 337.16it/s]
+[Validation] Step: 300, val_loss: 0.27763232588768005████████████▌ | 300/312 [00:00<00:00, 337.48it/s]
+callback_metrics: {'train_loss': tensor(0.3120, device='cuda:0'), 'train_loss_step': tensor(0.3120, device='cuda:0'), 'val_loss': tensor(0.3787, device='cuda:0'), 'val_loss_epoch': tensor(0.3787, device='cuda:0'), 'avg_val_loss': tensor(0.4122, device='cuda:0'), 'train_loss_epoch': tensor(0.4826, device='cuda:0')}
+Epoch 2 - avg_val_loss: 0.37872669100761414
+Epoch 2: 100%|█| 1875/1875 [00:08<00:00, 222.73it/s, v_num=d3b2, train_loss_step=0.277, val_loss_step=
+[Validation] Step: 0, val_loss: 0.2554452419281006                            | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.4557397961616516               | 100/312 [00:00<00:00, 344.02it/s]
+[Validation] Step: 200, val_loss: 0.27909648418426514▋             | 200/312 [00:00<00:00, 346.70it/s]
+[Validation] Step: 300, val_loss: 0.23277053236961365████████████▌ | 300/312 [00:00<00:00, 342.20it/s]
+callback_metrics: {'train_loss': tensor(0.2767, device='cuda:0'), 'train_loss_step': tensor(0.2767, device='cuda:0'), 'val_loss': tensor(0.3719, device='cuda:0'), 'val_loss_epoch': tensor(0.3719, device='cuda:0'), 'avg_val_loss': tensor(0.3787, device='cuda:0'), 'train_loss_epoch': tensor(0.3603, device='cuda:0')}
+Epoch 3 - avg_val_loss: 0.3719208240509033
+Epoch 3: 100%|█| 1875/1875 [00:08<00:00, 217.89it/s, v_num=d3b2, train_loss_step=0.535, val_loss_step=
+[Validation] Step: 0, val_loss: 0.3313857316970825                            | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.35257235169410706              | 100/312 [00:00<00:00, 297.18it/s]
+[Validation] Step: 200, val_loss: 0.40240487456321716▋             | 200/312 [00:00<00:00, 300.53it/s]
+[Validation] Step: 300, val_loss: 0.34607306122779846████████████▌ | 300/312 [00:00<00:00, 308.68it/s]
+callback_metrics: {'train_loss': tensor(0.5347, device='cuda:0'), 'train_loss_step': tensor(0.5347, device='cuda:0'), 'val_loss': tensor(0.3622, device='cuda:0'), 'val_loss_epoch': tensor(0.3622, device='cuda:0'), 'avg_val_loss': tensor(0.3719, device='cuda:0'), 'train_loss_epoch': tensor(0.3241, device='cuda:0')}
+Epoch 4 - avg_val_loss: 0.36215299367904663
+Epoch 4: 100%|█| 1875/1875 [00:08<00:00, 229.26it/s, v_num=d3b2, train_loss_step=0.332, val_loss_step=
+[Validation] Step: 0, val_loss: 0.3134377896785736                            | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.4411628842353821               | 100/312 [00:00<00:00, 350.71it/s]
+[Validation] Step: 200, val_loss: 0.3717624843120575█▋             | 200/312 [00:00<00:00, 351.62it/s]
+[Validation] Step: 300, val_loss: 0.21282075345516205████████████▌ | 300/312 [00:00<00:00, 350.56it/s]
+callback_metrics: {'train_loss': tensor(0.3323, device='cuda:0'), 'train_loss_step': tensor(0.3323, device='cuda:0'), 'val_loss': tensor(0.3616, device='cuda:0'), 'val_loss_epoch': tensor(0.3616, device='cuda:0'), 'avg_val_loss': tensor(0.3622, device='cuda:0'), 'train_loss_epoch': tensor(0.2999, device='cuda:0')}
+Epoch 5 - avg_val_loss: 0.3615528345108032
+Epoch 5: 100%|█| 1875/1875 [00:08<00:00, 218.70it/s, v_num=d3b2, train_loss_step=0.347, val_loss_step=
+[Validation] Step: 0, val_loss: 0.3178669214248657                            | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.33037883043289185              | 100/312 [00:00<00:00, 307.39it/s]
+[Validation] Step: 200, val_loss: 0.3643709421157837█▋             | 200/312 [00:00<00:00, 322.10it/s]
+[Validation] Step: 300, val_loss: 0.15997394919395447████████████▌ | 300/312 [00:00<00:00, 328.02it/s]
+callback_metrics: {'train_loss': tensor(0.3468, device='cuda:0'), 'train_loss_step': tensor(0.3468, device='cuda:0'), 'val_loss': tensor(0.3561, device='cuda:0'), 'val_loss_epoch': tensor(0.3561, device='cuda:0'), 'avg_val_loss': tensor(0.3616, device='cuda:0'), 'train_loss_epoch': tensor(0.2812, device='cuda:0')}
+Epoch 6 - avg_val_loss: 0.3561221659183502
+Epoch 6: 100%|█| 1875/1875 [00:08<00:00, 218.94it/s, v_num=d3b2, train_loss_step=0.262, val_loss_step=
+[Validation] Step: 0, val_loss: 0.32147863507270813                           | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.30424177646636963              | 100/312 [00:00<00:00, 339.66it/s]
+[Validation] Step: 200, val_loss: 0.2985485792160034█▋             | 200/312 [00:00<00:00, 340.15it/s]
+[Validation] Step: 300, val_loss: 0.18889082968235016████████████▌ | 300/312 [00:00<00:00, 337.31it/s]
+callback_metrics: {'train_loss': tensor(0.2620, device='cuda:0'), 'train_loss_step': tensor(0.2620, device='cuda:0'), 'val_loss': tensor(0.3307, device='cuda:0'), 'val_loss_epoch': tensor(0.3307, device='cuda:0'), 'avg_val_loss': tensor(0.3561, device='cuda:0'), 'train_loss_epoch': tensor(0.2690, device='cuda:0')}
+Epoch 7 - avg_val_loss: 0.3307252526283264
+Epoch 7: 100%|█| 1875/1875 [00:08<00:00, 215.30it/s, v_num=d3b2, train_loss_step=0.433, val_loss_step=
+[Validation] Step: 0, val_loss: 0.24470505118370056                           | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.39344894886016846              | 100/312 [00:00<00:00, 347.95it/s]
+[Validation] Step: 200, val_loss: 0.29653844237327576▋             | 200/312 [00:00<00:00, 341.95it/s]
+[Validation] Step: 300, val_loss: 0.27770841121673584████████████▌ | 300/312 [00:00<00:00, 333.63it/s]
+callback_metrics: {'train_loss': tensor(0.4327, device='cuda:0'), 'train_loss_step': tensor(0.4327, device='cuda:0'), 'val_loss': tensor(0.3249, device='cuda:0'), 'val_loss_epoch': tensor(0.3249, device='cuda:0'), 'avg_val_loss': tensor(0.3307, device='cuda:0'), 'train_loss_epoch': tensor(0.2587, device='cuda:0')}
+Epoch 8 - avg_val_loss: 0.32486703991889954
+Epoch 8: 100%|█| 1875/1875 [00:08<00:00, 213.98it/s, v_num=d3b2, train_loss_step=0.181, val_loss_step=0.497, val_loss_epoch=0.325, avg_val_loss=0.325, 
+[Validation] Step: 0, val_loss: 0.2897050678730011                                                                             | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.28111886978149414████▌                                                          | 100/312 [00:00<00:00, 302.79it/s]
+[Validation] Step: 200, val_loss: 0.2699379026889801█████████████████████████████████▏                              | 200/312 [00:00<00:00, 318.98it/s]
+[Validation] Step: 300, val_loss: 0.2586670517921448████████████████████████████████████████████████████████████▋   | 300/312 [00:00<00:00, 327.80it/s]
+callback_metrics: {'train_loss': tensor(0.1810, device='cuda:0'), 'train_loss_step': tensor(0.1810, device='cuda:0'), 'val_loss': tensor(0.3166, device='cuda:0'), 'val_loss_epoch': tensor(0.3166, device='cuda:0'), 'avg_val_loss': tensor(0.3249, device='cuda:0'), 'train_loss_epoch': tensor(0.2465, device='cuda:0')}
+Epoch 9 - avg_val_loss: 0.3166421353816986
+Epoch 9: 100%|███████████████████████████████████████████████| 1875/1875 [00:08<00:00, 213.27it/s, v_num=d3b2, train_loss_step=0.191, val_loss_step=0.320, val_loss_epoch=0.317, avg_val_loss=0.317, train_loss_epoch=0.237]
+[Validation] Step: 0, val_loss: 0.3184237778186798                                                                                                                                                  | 0/312 [00:00<?, ?it/s]
+[Validation] Step: 100, val_loss: 0.5030380487442017███████████████████████████▋                                                                                                         | 100/312 [00:00<00:00, 328.12it/s]
+[Validation] Step: 200, val_loss: 0.2928885221481323█████████████████████████████████████████████████████████████████████████████▎                                                       | 200/312 [00:00<00:00, 320.39it/s]
+[Validation] Step: 300, val_loss: 0.1563606858253479███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████      | 300/312 [00:00<00:00, 322.83it/s]
+callback_metrics: {'train_loss': tensor(0.1907, device='cuda:0'), 'train_loss_step': tensor(0.1907, device='cuda:0'), 'val_loss': tensor(0.3372, device='cuda:0'), 'val_loss_epoch': tensor(0.3372, device='cuda:0'), 'avg_val_loss': tensor(0.3166, device='cuda:0'), 'train_loss_epoch': tensor(0.2369, device='cuda:0')}
+Epoch 10 - avg_val_loss: 0.337241530418396
+Epoch 9: 100%|███████████████████████████████████████████████| 1875/1875 [00:09<00:00, 191.62it/s, v_num=d3b2, train_loss_step=0.191, val_loss_step=0.352, val_loss_epoch=0.337, avg_val_loss=0.337, train_loss_epoch=0.226]
+
+`Trainer.fit` stopped: `max_epochs=10` reached.

@@ -1,0 +1,24 @@
+{"time":"2025-02-20T15:04:52.0253614+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\fashion-mnist\\wandb\\run-20250220_150451-7z19a51v\\logs\\debug-core.log"}
+{"time":"2025-02-20T15:04:52.1435368+09:00","level":"INFO","msg":"created new stream","id":"7z19a51v"}
+{"time":"2025-02-20T15:04:52.1435368+09:00","level":"INFO","msg":"stream: started","id":"7z19a51v"}
+{"time":"2025-02-20T15:04:52.1435368+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:04:52.1440451+09:00","level":"INFO","msg":"sender: started","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:04:52.1440451+09:00","level":"INFO","msg":"handler: started","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:04:52.4387479+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-20T15:05:02.4393729+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:05:12.4396578+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:05:22.4392624+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:05:32.4395948+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:05:42.4399163+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:05:52.4396613+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:06:02.4399836+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:06:12.439994+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:06:22.4405857+09:00","level":"ERROR","msg":"monitor: disk: error sampling metrics: Incorrect function."}
+{"time":"2025-02-20T15:06:31.3649041+09:00","level":"INFO","msg":"stream: closing","id":"7z19a51v"}
+{"time":"2025-02-20T15:06:31.3649041+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-20T15:06:31.3654094+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-20T15:06:32.4539039+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-20T15:06:32.7139408+09:00","level":"INFO","msg":"handler: closed","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:06:32.7139408+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:06:32.7139408+09:00","level":"INFO","msg":"sender: closed","stream_id":"7z19a51v"}
+{"time":"2025-02-20T15:06:32.7144613+09:00","level":"INFO","msg":"stream: closed","id":"7z19a51v"}

@@ -1,0 +1,46 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.10",
+  "startedAt":  "2025-02-20T06:20:19.385169Z",
+  "args":  [
+    "--devices",
+    "0"
+  ],
+  "program":  "C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\fashion-mnist\\lightning_train.py",
+  "codePath":  "classification\\fashion-mnist\\lightning_train.py",
+  "git":  {
+    "remote":  "https://github.com/hcryu/pytorch_practice.git",
+    "commit":  "bd2bc8883f0e42f4b56befe5a059aadd2f51bcb8"
+  },
+  "email":  "hcryoo76@gmail.com",
+  "root":  "C:\\GD_Sync\\1_PROJECT\\2_CODES\\pytorch-practice\\classification\\fashion-mnist",
+  "host":  "RYU-COM",
+  "executable":  "C:\\Users\\syu\\miniconda3\\envs\\torch_lightning\\python.exe",
+  "codePathLocal":  "lightning_train.py",
+  "cpu_count":  20,
+  "cpu_count_logical":  28,
+  "gpu":  "NVIDIA GeForce RTX 4070",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "977364799488",
+      "used":  "549328371712"
+    }
+  },
+  "memory":  {
+    "total":  "34079031296"
+  },
+  "cpu":  {
+    "count":  20,
+    "countLogical":  28
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4070",
+      "memoryTotal":  "12878610432",
+      "cudaCores":  5888,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}
